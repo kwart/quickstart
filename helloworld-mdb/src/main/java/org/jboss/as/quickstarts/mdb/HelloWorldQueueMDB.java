@@ -17,6 +17,8 @@
 package org.jboss.as.quickstarts.mdb;
 
 import java.util.logging.Logger;
+
+import javax.annotation.security.RunAs;
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
 import javax.jms.JMSException;
@@ -36,6 +38,7 @@ import javax.jms.TextMessage;
     @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "queue/HELLOWORLDMDBQueue"),
     @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
     @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge") })
+@RunAs("test")
 public class HelloWorldQueueMDB implements MessageListener {
 
     private final static Logger LOGGER = Logger.getLogger(HelloWorldQueueMDB.class.toString());
