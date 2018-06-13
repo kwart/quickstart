@@ -15,7 +15,6 @@ public class ProducerClient extends AbstractJMSClient {
     @Override
     public void justDoIt(JMSContext context) {
         log.info("Sending messages with content: " + content);
-        // Send the specified number of messages
         JMSProducer producer = context.createProducer();
         int i = 0;
         while (true) {

@@ -18,11 +18,9 @@ public class ConsumerClient extends AbstractJMSClient {
         // Create the JMS consumer
         try (JMSConsumer consumer = context.createConsumer(destination)) {
             while (true) {
-                // Then receive the same number of messages that were sent
                 String text = consumer.receiveBody(String.class, 1000L * waitTimeSec);
                 if (text != null) {
-                    System.out.println();
-                    System.out.println(text);
+                    System.out.println("Received: " + text);
                     try {
                         Thread.sleep(1000 * waitTimeSec);
                     } catch (InterruptedException e) {
