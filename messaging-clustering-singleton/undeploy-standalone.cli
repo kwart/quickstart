@@ -1,5 +1,0 @@
-## Batch file to undeploy messaging-clustering-singleton
-
-undeploy messaging-clustering-singleton.war
-
-

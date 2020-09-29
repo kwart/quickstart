@@ -15,13 +15,13 @@
     <parent>
         <groupId>org.wildfly.quickstarts</groupId>
         <artifactId>quickstart-parent</artifactId>
-        <version>11.0.0.Final</version>
+        <version>20.0.0.Final</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>helloworld-jms</artifactId>
     <packaging>jar</packaging>
-    <name>${qs.name.prefix} helloworld-jms</name>
+    <name>Quickstart: helloworld-jms</name>
     <description>A Helloworld JMS external producer/consumer client</description>
 
     <licenses>
@@ -36,7 +36,7 @@
         <dependency>
             <groupId>org.wildfly</groupId>
             <artifactId>wildfly-client-all</artifactId>
-            <version>11.0.0.Final</version>
+            <version>20.0.0.Final</version>
             <type>jar</type>
         </dependency>
     </dependencies>
