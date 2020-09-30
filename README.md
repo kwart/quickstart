@@ -1,3 +1,3 @@
 # WildFly Application Server (WildFly) Quickstarts
 
-Reduced version just to cover the WildFly administration training.
+Very reduced version of https://github.com/wildfly/quickstart/ just to cover the WildFly administration training needs.
